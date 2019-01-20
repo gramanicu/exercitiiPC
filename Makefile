@@ -2,8 +2,8 @@
 
 CC = gcc
 CFLAGS = -lm -Wall -Wextra -std=c99
-EXE = exe
-SOURCE = exercitii.c
+EXE = matrici
+SOURCE = matriciRare.c
 
 # arhiva
 ANAME = exercitii.zip
