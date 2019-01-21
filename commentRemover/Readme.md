@@ -40,15 +40,15 @@ __void overwrite_source(char *filename)__ - moves the content of the auxiliar fi
 
 > It opens the files then finds the length of the auxiliary file
 ```c
-    for (i = 0; i < size; i++) {
-        fscanf(in, "%c", &c);
-        fprintf(out, "%c", c);
-    }
+for (i = 0; i < size; i++) {
+    fscanf(in, "%c", &c);
+    fprintf(out, "%c", c);
+}
 ```
 > Then it reads all chars in a file and puts them in the other one. At the end, it closes
 the files & deletes the auxiliary file.
 ```c
-    remove(AUX_FILE);
+remove(AUX_FILE);
 ```
 ___
 __void delete_Comments(char *filename)__ - This function will search for comments in a given file removes them (inline and block comments) & write the intermediary result to another file
