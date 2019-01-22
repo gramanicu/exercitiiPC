@@ -31,6 +31,7 @@ void citireFragment(char *sursa, int start, int lines, FILE *dest) {
             lc++;
         }
     }
+    fclose(in);
 }
 
 // Verifica daca un sir de caractere exista deja in vectorul de stringuri
@@ -79,6 +80,16 @@ int main(int argc, char **argv) {
 
     // Afiseaza numarul total de fisiere
     printf("%d\n", nr_fisiere);
+
+    fclose(in);
+    fclose(out);
+    free(filename);
+    int i;
+    for(i=0; i<nr_fisiere; i++) {
+        free(fisiere[i]);
+    }
+    free(fisiere);
+    free(outName);
 
     return 0;
 }
