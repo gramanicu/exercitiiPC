@@ -58,10 +58,14 @@ void scrie_vehicul(vehicul *masina, FILE *out) {
 }
 
 int main() {
-    FILE *in = fopen("audi_A4.bin", "rb");
-    // FILE *out = fopen("audi_A4.bin", "wb");
-    // scrie_vehicul(adauga_vehicul("A4", "audi", adauga_motor(300, 500, 10), ""), out);
-    print_vehicul(citeste_vehicul(in));
+    int mode = 1; // 0 write, 1 read
+    if(mode) {
+        FILE *in = fopen("audi_A4.bin", "rb");
+        print_vehicul(citeste_vehicul(in));
+    } else {
+        FILE *out = fopen("audi_A4.bin", "wb");
+        scrie_vehicul(adauga_vehicul("A5", "audi", adauga_motor(300, 500, 10), ""), out);
+    } 
 
     return 0;
 }
