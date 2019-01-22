@@ -1,4 +1,6 @@
-# exercitiiPC
-Exercitii pentru examenul de PC
+# Sortare Externa
 
-Nu sunt neaparat terminate
+Solutie pentru problema : 
+
+![Alt text](./2012_final_1.svg)
+<img src="./2012_final_1.svg">
