@@ -1,3 +1,3 @@
-#exercitiiPC
+# exercitiiPC
 
 Exercitii pentru examenul de PC
